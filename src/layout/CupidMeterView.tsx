@@ -48,6 +48,7 @@ const CupidMeterView = () => {
           'nightray',
           'lein',
           'winlen',
+          'winlen dodol',
           'wynlein',
           'priya',
           'priya bagus',

@@ -43,6 +43,7 @@ const CekJodohView = () => {
           'rayy',
           'rayyy',
           'winlen',
+          'winlen dodol',
           'wynlein',
           'apel',
           'apple',
