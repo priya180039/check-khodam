@@ -35,6 +35,9 @@ const CekKhodamView = () => {
         const specialName = [
           'niw',
           'ryni widya ningrum',
+          'rini widya ningrum',
+          'rini',
+          'rini widya',
           'ryni',
           'niww',
           'niwww',
