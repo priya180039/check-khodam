@@ -38,6 +38,7 @@ const CupidMeterView = () => {
           'wid',
           'widd',
           'widdd',
+          'harumi',
         ];
         const maleName = [
           'ray',

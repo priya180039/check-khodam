@@ -37,6 +37,7 @@ const CekJodohView = () => {
           'wid',
           'widd',
           'widdd',
+          'harumi',
         ];
         const maleName = [
           'ray',
