@@ -9,7 +9,7 @@ export const AnotherTest = () => {
     navigate(path);
   };
   return (
-    <div className="flex flex-col justify-between items-center gap-3 md:grid md:grid-cols-2">
+    <div className="flex flex-col justify-between items-center gap-3">
       <span>Do Another Test:</span>
       {location.pathname !== '/cek-khodam' && (
         <PrimaryButton

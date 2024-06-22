@@ -8,7 +8,7 @@ const HomeView = () => {
     navigate(path);
   };
   return (
-    <div className="flex flex-col justify-between items-center gap-3 pt-4 md:grid md:grid-cols-2 mx-3">
+    <div className="flex flex-col justify-between items-center gap-3 pt-4 mx-3">
       <PrimaryButton
         onClick={() => handleNavigation('/cek-khodam')}
         label="Cek Khodam"
