@@ -26,6 +26,8 @@ const CupidMeterView = () => {
           'niw',
           'ryni widya ningrum',
           'rini widya ningrum',
+          'ningrum',
+          'widya ningrum',
           'rini',
           'rini widya',
           'ryni',

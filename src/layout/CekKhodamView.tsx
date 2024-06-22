@@ -36,6 +36,8 @@ const CekKhodamView = () => {
           'niw',
           'ryni widya ningrum',
           'rini widya ningrum',
+          'ningrum',
+          'widya ningrum',
           'rini',
           'rini widya',
           'ryni',
