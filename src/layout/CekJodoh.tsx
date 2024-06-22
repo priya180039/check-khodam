@@ -57,6 +57,8 @@ const CekJodohView = () => {
           'bagus',
           'priya bagus amanullah',
           'pba',
+          'pebea',
+          'vinceray',
         ];
         const maleGuest = maleName.includes(name.toLowerCase());
         const femaleGuest = femaleName.includes(name.toLowerCase());
