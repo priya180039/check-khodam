@@ -18,7 +18,7 @@ jobs:
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
         run: |
-          npx sentry-cli releases new -p your-project-name $GITHUB_SHA
+          npx sentry-cli releases new -p javascript-react $GITHUB_SHA
           npx sentry-cli releases set-commits --auto $GITHUB_SHA
           npx sentry-cli releases finalize $GITHUB_SHA
           npx sentry-cli releases deploys $GITHUB_SHA new -e production
