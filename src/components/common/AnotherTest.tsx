@@ -8,14 +8,6 @@ export const AnotherTest = () => {
   const handleNavigation = (path: string): void => {
     navigate(path);
   };
-
-  const handleError = () => {
-    try {
-      throw new Error('Test error for Sentry');
-    } catch (error) {
-      console.error(error);
-    }
-  };
   return (
     <div className="flex flex-col justify-between items-center gap-3">
       <span>Do Another Test:</span>
@@ -47,22 +39,13 @@ export const AnotherTest = () => {
         />
       )}
       {location.pathname !== '/' && (
-        <>
-          <PrimaryButton
-            onClick={() => handleNavigation('/')}
-            label="Home"
-            height={52}
-            width="auto"
-            severity="secondary"
-          />
-          <PrimaryButton
-            onClick={handleError}
-            label="Test Error"
-            height={52}
-            width="auto"
-            severity="secondary"
-          />
-        </>
+        <PrimaryButton
+          onClick={() => handleNavigation('/')}
+          label="Home"
+          height={52}
+          width="auto"
+          severity="secondary"
+        />
       )}
     </div>
   );
