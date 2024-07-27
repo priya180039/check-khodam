@@ -1,0 +1,24 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy to Sentry
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+        run: |
+          npx sentry-cli releases new -p your-project-name $GITHUB_SHA
+          npx sentry-cli releases set-commits --auto $GITHUB_SHA
+          npx sentry-cli releases finalize $GITHUB_SHA
+          npx sentry-cli releases deploys $GITHUB_SHA new -e production
