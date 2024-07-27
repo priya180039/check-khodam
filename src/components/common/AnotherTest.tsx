@@ -8,6 +8,14 @@ export const AnotherTest = () => {
   const handleNavigation = (path: string): void => {
     navigate(path);
   };
+
+  const handleError = () => {
+    try {
+      throw new Error('Test error for Sentry');
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <div className="flex flex-col justify-between items-center gap-3">
       <span>Do Another Test:</span>
@@ -48,7 +56,7 @@ export const AnotherTest = () => {
             severity="secondary"
           />
           <PrimaryButton
-            onClick={() => handleError('/')}
+            onClick={handleError}
             label="Test Error"
             height={52}
             width="auto"
