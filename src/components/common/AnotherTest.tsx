@@ -39,13 +39,22 @@ export const AnotherTest = () => {
         />
       )}
       {location.pathname !== '/' && (
-        <PrimaryButton
-          onClick={() => handleNavigation('/')}
-          label="Home"
-          height={52}
-          width="auto"
-          severity="secondary"
-        />
+        <>
+          <PrimaryButton
+            onClick={() => handleNavigation('/')}
+            label="Home"
+            height={52}
+            width="auto"
+            severity="secondary"
+          />
+          <PrimaryButton
+            onClick={() => handleError('/')}
+            label="Test Error"
+            height={52}
+            width="auto"
+            severity="secondary"
+          />
+        </>
       )}
     </div>
   );
